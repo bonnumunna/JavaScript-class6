@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            line-height: 1.6em;
+            font-size: 15px;
+        }
+        
+        header {
+            width: 100%;
+            background-color: dodgerblue;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 3em;
+        }
+        
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        footer {
+            width: 100%;
+            background: #000;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Events</h1>
+        <p>9th<sup>th</sup> January, 2024</p>
+    </header>
+    <div class="container">
+        <form action="#">
+            <input type="search" onkeyup="showKey(this)" id="search">
+            <button id="btn" onclick="showMessage()">Search</button>
+            <br><br>
+            <select name="" onchange="showValue (this)" id="">
+                <option value="n/a">--select--</option>
+                <option value="NG">Nigeria</option>
+                <option value="CA">Canada</option>
+                <option value="GE">Germany</option>
+            </select>
+            <br><br>
+            <h4>Our Menu <span id="price"></span></h4>
+            <select name="" onchange="showMenu (this)" id="">
+                <option value="n/a">--select--</option>
+                <option value="Fried Rice">Fried Rice</option>
+                <option value="Sharwama">Sharwama</option>
+                <option value="Chinese Rice">Chinese Rice</option>
+            </select>
+            <input type="number" min="1" max="10" id="" onchange="changeNumber(this)">
+
+            <br><br>
+            <input type="range" onchange="getValue(this)" id="">
+        </form>
+    </div>
+    <footer>
+        <p>JavaScript Class6 &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+    </footer>
+    <script src="events.js"></script>
+</body>
+
+</html>
